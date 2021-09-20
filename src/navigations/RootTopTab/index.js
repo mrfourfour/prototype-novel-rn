@@ -69,20 +69,11 @@ function RootTopTab() {
     return (
         <Tab.Navigator
             tabBar={MyTabBar}
-        // screenOptions={{
-        //     swipeEnabled: false,
-        //     lazy: true,
-        //     tabBarScrollEnabled: true,
-        //     backBehavior: "none",
-        //     tabBarLabelStyle: {
-        //         fontWeight: '700',
-        //         fontSize: 16
-        //     },
-        //     tabBarStyle: {
-        //         elevation: 0,
-        //         shadowOpacity: 0
-        //     },
-        // }}
+            screenOptions={{
+                swipeEnabled: false,
+                lazy: true,
+                backBehavior: "none",
+            }}
         >
             <Tab.Screen name="Home" component={Home} options={{
                 title: "홈",

@@ -12,13 +12,13 @@ const MOCK_RESULT = [
     }, 
     {
         "id": 2,
-        "title": "이 멋진 세계의 축복을!",
-        "author": "아카츠키 나츠메",
+        "title": "방패 용사 성공담",
+        "author": "아네코 유사기",
         "image": {
-            "uri": "https://blog.kakaocdn.net/dn/cnVU8E/btqNWEhFMlq/6kklkNYjIrUXHdHmyeR7iK/img.png"
+            "uri": "https://blog.kakaocdn.net/dn/ci32aE/btqGbqxr02a/N3FG2n3YMYddgwyK25wgiK/img.jpg"
         },
         "adult": false,
-        "tags": [],
+        "tags": ["이세계물", "판타지", "용사소환"],
     },
     {
         "id": 3,

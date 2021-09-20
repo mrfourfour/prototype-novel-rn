@@ -49,7 +49,7 @@ function DailyTotalHomeRanking() {
 
     return (
         <View style={{
-            marginVertical: 20
+            marginTop: 30
         }}>
             <Text style={{
                 fontSize: 24,
@@ -71,7 +71,7 @@ function DailyTotalHomeRanking() {
                     : <FlatList
                         horizontal
                         data={data}
-                        contentContainerStyle={{ marginHorizontal: 16 }}
+                        contentContainerStyle={{ paddingHorizontal: 16 }}
                         renderItem={renderItem}
                     />
             }
