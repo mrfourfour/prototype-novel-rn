@@ -8,6 +8,7 @@ import {
 function Home() {
     return (
         <View style={{ flexDirection: 'column'}}>
+            <Text>홈이라구요~</Text>
         </View>
     )
 }

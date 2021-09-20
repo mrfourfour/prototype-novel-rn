@@ -1,8 +1,8 @@
-import React from 'react'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from '../../pages/Home';
+import React from 'react';
 import HeaderRight from '../../components/HeaderRight';
 import HeaderTitle from '../../components/HeaderTitle';
+import RootTopTab from '../RootTopTab';
 
 const Stack = createNativeStackNavigator()
 
@@ -13,7 +13,7 @@ function RootStack() {
             headerRight: ({navigation}) => (<HeaderRight navigation={navigation} />),
             headerShadowVisible: false,
         }}>
-            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="RootTopTab" component={RootTopTab} />
         </Stack.Navigator>
     )
 }
