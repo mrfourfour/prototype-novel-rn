@@ -32,7 +32,7 @@ function DailyTotalHomeRanking() {
                     fontSize: 12
                 }}>{item.author}</Text>
                 <Text style={{
-                    fontSize: 8,
+                    fontSize: 10,
                     color: "#555555"
                 }}>
                     {tag}
