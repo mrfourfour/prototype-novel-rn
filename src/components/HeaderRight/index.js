@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
-import CircularImage from '../../atoms/CircularImage';
-import SearchButton from '../../atoms/SearchButton';
+import IconPressable from '../../atoms/IconPressable';
 import ProfileImage from '../ProfileImage';
 
 function HeaderRight({ navigation }) {
@@ -14,12 +13,13 @@ function HeaderRight({ navigation }) {
             flexDirection: "row",
             alignItems: "center"
         }}>
-            <SearchButton
+            <IconPressable
+                name="search1"
                 onPress={handleSearchButton}
                 size={20}
                 color={"#000000"}
             />
-            <View style={{width: 8}}/>
+            <View style={{width: 15}}/>
             <ProfileImage navigation={navigation} size={30} />
         </View>
     )
