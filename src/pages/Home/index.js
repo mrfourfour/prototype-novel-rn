@@ -1,15 +1,23 @@
 import React from 'react'
 import {
     View,
-    Text
+    Text,
+    ScrollView
 } from 'react-native'
+import BannerCarousel from '../../components/BannerCarousel';
+import DailyTotalHomeRanking from '../../components/DailyTotalHomeRanking';
 
 
 function Home() {
     return (
-        <View style={{ flexDirection: 'column'}}>
-            <Text>홈이라구요~</Text>
-        </View>
+        <ScrollView contentContainerStyle={{ backgroundColor: "#fff"}}>
+            <BannerCarousel />
+            <DailyTotalHomeRanking />
+            <DailyTotalHomeRanking />
+            <DailyTotalHomeRanking />
+            <DailyTotalHomeRanking />
+            <DailyTotalHomeRanking />
+        </ScrollView>
     )
 }
 
