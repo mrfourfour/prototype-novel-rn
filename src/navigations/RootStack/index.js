@@ -8,11 +8,12 @@ const Stack = createNativeStackNavigator()
 
 function RootStack() {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={Home} options={{
-                headerTitle: ({navigation}) => (<HeaderTitle navigation={navigation} />),
-                headerRight: ({navigation}) => (<HeaderRight navigation={navigation} />)
-            }} />
+        <Stack.Navigator screenOptions={{
+            headerTitle: ({navigation}) => (<HeaderTitle navigation={navigation} />),
+            headerRight: ({navigation}) => (<HeaderRight navigation={navigation} />),
+            headerShadowVisible: false,
+        }}>
+            <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
     )
 }
